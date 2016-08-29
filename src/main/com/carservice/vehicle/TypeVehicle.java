@@ -1,4 +1,4 @@
-package com.carservice;
+package com.carservice.vehicle;
 
 import java.util.ArrayList;
 

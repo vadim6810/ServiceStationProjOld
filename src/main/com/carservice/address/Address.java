@@ -1,4 +1,4 @@
-package com.carservice;
+package com.carservice.address;
 
 import java.util.ArrayList;
 

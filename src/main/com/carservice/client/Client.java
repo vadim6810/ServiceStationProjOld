@@ -1,4 +1,7 @@
-package com.carservice;
+package com.carservice.client;
+
+import com.carservice.address.Address;
+import com.carservice.vehicle.TypeVehicle;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;

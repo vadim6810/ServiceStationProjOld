@@ -1,4 +1,4 @@
-package com.carservice;
+package com.carservice.address;
 
 /**
  * Created by Legat on 8/27/2016.
