@@ -10,7 +10,7 @@ public class ClientController {
 
     ArrayList<Client> clients;
 
-    String getClientEmail(Client client) {
+    public String getClientEmail(Client client) {
         Client tempCl=null;
         for (Client clnt : clients) {
             if (clnt.equals(client)) {
@@ -31,6 +31,8 @@ public class ClientController {
         }
         return tempCl;
     }
+
+  public void addClient (){}
 
 
 }

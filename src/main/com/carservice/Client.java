@@ -11,6 +11,7 @@ public class Client {
      Integer id;
     String name;
     String email;
+    String password;
     String phone;
     TypeVehicle vehicle;
     Address area;
@@ -56,20 +57,20 @@ public class Client {
         return email;
     }
 
+    public Client(String name, String email, String password) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
+
+    public Client() {
+    }
+
     public void setEmail(String email) {
         this.email = email;
     }
 
-    public Client(Pattern pattern, Integer id, String name, String email, String phone, TypeVehicle vehicle, Address area, String avatar) {
-        this.pattern = pattern;
-        this.id++;
-        this.name = name;
-        this.email = email;
-        this.phone = phone;
-        this.vehicle = vehicle;
-        this.area = area;
-        this.avatar = avatar;
-    }
+
 
     public String getPhone() {
 
