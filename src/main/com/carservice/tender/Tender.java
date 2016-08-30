@@ -27,3 +27,9 @@ public class Tender {
     public void addTender(){
 
     }
+    public void removeTender(){
+
+    }
+    public void changeTender(){
+
+    }
