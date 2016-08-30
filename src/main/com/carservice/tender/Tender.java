@@ -13,7 +13,7 @@ public class Tender {
     Integer idClient;
     String tenderDescription;
     Date date;
-    TypeVehicle typeVehicle;
+    String typeVehicle;
     CarManufacture carManufacture;
     boolean tenderState;
 }
