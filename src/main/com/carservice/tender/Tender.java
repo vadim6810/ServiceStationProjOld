@@ -18,12 +18,12 @@ public class Tender {
     boolean tenderState;
 }
 
-public List<Tender> getTenderByClient(int idClient){
-    return idClient;
-}
-public List<Tender> getTenderForContractor(String rangeWork, String typeVehicle,String carManufacture){
-    return idClient;
-}
-public void addTender(){
+    public List<Tender> getTenderByClient(int idClient){
+        return idClient;
+    }
+    public List<Tender> getTenderForContractor(String rangeWork, String typeVehicle,String carManufacture){
+        return idClient;
+    }
+    public void addTender(){
 
-}
+    }
