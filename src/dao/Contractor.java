@@ -18,7 +18,13 @@ public class Contractor {
 	@Column(name="contrEmail")
 	private String email;
 	
-	public Contractor(String name, String email) {
+	@Column(name="contrUrl")
+	private String url;
+	
+	@Column(name="contrPhone")
+	private String phone;
+	
+	public Contractor(String name, String email, String url, String phone) {
 		super();
 		this.name = name;
 		this.email = email;
