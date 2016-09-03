@@ -22,8 +22,10 @@ public class Contractor {
 		super();
 		this.name = name;
 		this.email = email;
+		this.url = url;
+		this.phone = phone;
 	}
-
+	
 	public Contractor() {
 		
 	}
@@ -43,6 +45,22 @@ public class Contractor {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	public String getUrl() {
+		return url;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
 
 	public int getId() {
 		return id;
@@ -50,6 +68,7 @@ public class Contractor {
 
 	@Override
 	public String toString() {
-		return "Contractor [id=" + id + ", name=" + name + ", email=" + email + "]";
+		return "Contractor [id=" + id + ", name=" + name + ", email=" + email + ", url=" + url + ", phone=" + phone
+				+ "]";
 	}
 }

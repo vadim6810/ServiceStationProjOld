@@ -27,13 +27,30 @@ public class ContractorHibernate implements ContractorRepository{
 	}
 
 	@Transactional
-	public boolean deleteContractor(int id) {
+	public boolean removeContractor(int id) {
 		
 		Contractor contractor = getContractor(id);
 		if(contractor == null)
 			return false;
 		em.remove(contractor);
 		return true;
+	}
+	
+	@Override
+	@Transactional
+	public boolean removeContractor(String email) {
+		Contractor contractor = getContractor(email);
+		if(contractor == null)
+			return false;
+		em.remove(contractor);
+		return true;
+	}
+	
+	public Contractor getContractor(String email){
+		
+		Query query = em.createQuery("select c from Contractor c where c.email = :email");
+		query.setParameter("email", email);
+		return (Contractor) query.getResultList().get(0);
 	}
 
 	public Iterator<Contractor> iterator() {
@@ -45,4 +62,16 @@ public class ContractorHibernate implements ContractorRepository{
 		
 		return em.find(Contractor.class, id);
 	}
+
+	@Override
+	@Transactional
+	public boolean changeEmail(String oldEmail, String newEmail) {
+		
+		Contractor contractor = getContractor(oldEmail);
+		if(contractor == null)
+			return false;
+		contractor.setEmail(newEmail);
+		return true;
+	}
+
 }
